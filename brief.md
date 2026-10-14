@@ -43,4 +43,8 @@ Resource: Understand star schema and the importance for Power BI - Microsoft Lea
 
 ## Misconception in My Track
 
+Misconception: many people believe cross-validation prevents overfitting, so a model that passed cross-validation cannot be overfitted. Correct version: cross-validation does not change how the model learns. It only measures how well the model is likely to perform on data it has not seen, which makes overfitting visible as a gap between training and validation scores. For time-ordered congestion data, shuffled folds can even hide overfitting by giving an inflated score. Proof: scikit-learn, section 3.1.5 "Permutation test score": "Cross-validation provides information about how well an estimator generalizes by estimating the range of its expected scores."
+
 ## Open Question
+
+I would verify whether TimeSeriesSplit gives a realistic score for the congestion model, by testing it on data from a real past emergency, such as a large event or outage, which may look very different from normal days in the training data.

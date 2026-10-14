@@ -25,9 +25,21 @@ Resource: Build an offline-first app - Android Developers - https://developer.an
 
 ## Networking
 
+Network slicing runs several logical networks on the same physical 5G infrastructure. Each slice is isolated and secure, and can be configured for its own needs, such as low latency, high throughput or high reliability. For this service, the operator can create a public safety slice that gives responders prioritized, mission-critical communications. During a crowded event or emergency, the slice scales with demand without interfering with other slices.
+
+Resource: Network slicing - Ericsson - https://www.ericsson.com/en/network-slicing
+
 ## Cybersecurity
 
+NIST's incident response lifecycle has four phases that run as a loop. Preparation: write the plan, assign roles, set up monitoring and test backups. Detection and Analysis: notice unusual activity, such as a traffic spike, then confirm the incident and its scope. Containment, Eradication and Recovery: isolate affected systems, remove the threat and restore service. Post-Incident Activity: review lessons learned and feed them back into preparation. In 2025, NIST reorganized them around the CSF 2.0 functions.
+
+Resource: The NIST Incident Response Lifecycle: 4 Phases Explained - Consilien - https://consilien.com/news/nist-incident-response-lifecycle-4-phases-explained
+
 ## Data
+
+A star schema has one central fact table, such as daily usage records, linked directly to denormalized dimension tables like Region and Date. A snowflake schema normalizes dimensions into extra tables, for example City, Region and Country. Snowflaking reduces repeated data but adds joins and complexity. For reports of usage per region per day, a star schema is the better fit: queries filter by date and region, then summarize usage, with fewer joins.
+
+Resource: Understand star schema and the importance for Power BI - Microsoft Learn - https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
 
 ## Misconception in My Track
 
